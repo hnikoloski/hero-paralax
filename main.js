@@ -15,21 +15,4 @@ $(document).ready(function () {
 
     heroParallax.css("transform", `rotate3d(${percentY}, ${percentX}, 0, ${rotation}deg)`);
   });
-
-  function shuffleArray(array) {
-    let currentIndex = array.length;
-    let temporaryValue;
-    let randomIndex;
-
-    while (currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex--);
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-  }
-
-  shuffleArray(heroAnim);
 });
